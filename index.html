@@ -2,7 +2,8 @@
 <head>          <title id="title">Civilization Builder</title>
 <link rel="stylesheet" type="text/css" href="stylesheetLayout.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="script_v2.js"></script>
+<script src="script_v4.2.js"></script>
+<script src="save-load.js"></script>
 </head>
 <body>
 
@@ -28,6 +29,11 @@
         <br><br><br>
         <button onclick="gather()" id="gatherButton">Gather some resources for your people!</button> 
         <br><br>
+        <input type="text" id="enemyCount" disabled style= text-align: center;>
+            <br>
+            <img src="Enemies48x48.png" id="enemy" onclick="attackEnemy()">
+            <br>
+        <input type="text" id="enemyStrength" style="color: red; text-shadow: 1px 1px 1px black;" disabled style= text-align: center;>
         
     </div>
     
@@ -36,7 +42,7 @@
             <div class="header" id="headerBuilding"><h3>Buildings</h3></div>
             <div class="purchaseable" id="infoBuilding">
                 
-                <div class="tooltip"><img src="camp.png" class="icon" onclick="buyCamp()"><p id="tooltipCamp" class="tooltiptextB"></p>
+                <div class="tooltip"><img src="camp.png" class="icon" onclick="buyCamp()"><p id="tooltipCamp" class="tooltiptext    "></p>
                 <div class="infoDisplay"><p id="campDisplay" class="display"></p></div>
                 </div>
                 <br>
@@ -55,8 +61,7 @@
                 </div>
                 </div>
                 <br>
-                <!--CHANGE AGRICULTURE PICTURE-->
-                <div class="tooltip"><img src="Agriculture.jpg" class="icon" onclick="buyHunter()">
+                <div class="tooltip"><img src="hunter.png" class="icon" onclick="buyHunter()">
                 <p id="tooltipHunter" class="tooltiptext"></p>  
                 <div class="infoDisplay"><p id="hunterDisplay" class="display"></p>
                 </div>
@@ -76,6 +81,27 @@
                 </div>
                 </div>
                 <br>
+                <!--CHANGE VILLAGER PICTURE-->
+                <div class="tooltip"><img src="villager.png" class="icon" onclick="buyShaman()">
+                <p id="tooltipShaman" class="tooltiptext"></p>  
+                <div class="infoDisplay"><p id="shamanDisplay" class="display"></p>
+                </div>
+                </div>
+                <br>
+                <!--CHANGE AGRICULTURE PICTURE-->
+                <div class="tooltip"><img src="hunter.png" class="icon" onclick="buyMilitia()">
+                <p id="tooltipMilitia" class="tooltiptext"></p>  
+                <div class="infoDisplay"><p id="militiaDisplay" class="display"></p>
+                </div>
+                </div>
+                <br>
+                <!--CHANGE AGRICULTURE PICTURE-->
+                <div class="tooltip" style="visibility: hidden" id="archerDiv"><img src="Agriculture.jpg" class="icon" onclick="buyArcher()">
+                <p id="tooltipArcher" class="tooltiptext"></p>  
+                <div class="infoDisplay"><p id="archerDisplay" class="display"></p>
+                </div>
+                </div>
+                <br>
 
             </div>
         </div>
@@ -87,6 +113,10 @@
             <div class="purchaseable" id="infoResearch">
                 <div class="tooltip"><img src="Agriculture.jpg" onclick="buyAgriculture()" class="icon"><text id=""> </text> <p id="tooltipAgriculture" class="tooltiptext"></p>
                 <div class="infoDisplay"><p id="agricultureDisplay" class = "display"></p></div>
+                </div>
+                <br>
+                <div class="tooltip" style="visibility: hidden" id="miningDiv"><img src="villager.png" onclick="buyMining()" class="icon"><text id=""> </text> <p id="tooltipMining" class="tooltiptext"></p>
+                <div class="infoDisplay"><p id="miningDisplay" class = "display"></p></div>
                 </div>
                 
             </div>
