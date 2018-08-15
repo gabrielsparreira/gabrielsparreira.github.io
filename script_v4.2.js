@@ -726,7 +726,7 @@ function buyBuilder() {
         food = food - builderCost;
         builder = builder + 1;
         builderCost = builderCost * unitcostMultiplier;
-        buildingcostMultiplier = buildingcostMultiplier - (workerMultiplier * (buildingcostMultiplier/150));
+        buildingcostMultiplier = buildingcostMultiplier - (workerMultiplier * (buildingcostMultiplier/100));
     }   
 }
 
@@ -886,7 +886,7 @@ function update() {
         //BUILDER//
     document.getElementById('builderDisplay').innerHTML = Math.round(builderCost*100)/100 + " food.";
     document.getElementById('builderDisplay').style.textShadow = "1px 1px 1px black";
-    document.getElementById('tooltipBuilder').innerHTML = "Specialized in building, gives little resources but each builder lower the costs of buildings multiplier in 1%. Each builder costs: " + Math.round(builderCost*100)/100 + " food. You have: " + builder + " Builders. Multiplier is at: " + Math.round(buildingcostMultiplier*100)/100 + " Cannot go below 1.05";
+    document.getElementById('tooltipBuilder').innerHTML = "Specialized in building, gives little resources but each builder lowers the buildings multiplier in " + (1.15 * workerMultiplier) + "%. Each builder costs: " + Math.round(builderCost*100)/100 + " food. You have: " + builder + " Builders. Multiplier is at: " + Math.round(buildingcostMultiplier*100)/100 + " Cannot go below 1.05";
     if ((food < builderCost)||(population == populationMax)) {
         document.getElementById('builderDisplay').style.color = "red";
     } else {
@@ -1017,40 +1017,86 @@ function attackEnemy() {
     }
 }
 
+var pillage = 0;
+
 function enemyPillage() {
-    if (luxury >= (enemy * enemyStrengthGlobal)/4){
-        luxury = luxury - (enemy * enemyStrengthGlobal)/4;
-        if (luxury < (enemy * enemyStrengthGlobal)/4) {
+    if (pillage < enemyStrengthGlobal * 15) {
+        if (luxury >= (enemy * enemyStrengthGlobal)/4){
+            luxury = luxury - (enemy * enemyStrengthGlobal)/4;
+            pillage = pillage + (enemy * enemyStrengthGlobal)/4;
+            if (luxury < (enemy * enemyStrengthGlobal)/4) {
+            pillage = pillage + luxury;
             luxury = 0;
         }
     }
-    else if (material >= (enemy * enemyStrengthGlobal)/4){
-        material = material - (enemy * enemyStrengthGlobal)/4;
-        if (material < (enemy * enemyStrengthGlobal)/4) {
+        else if (material >= (enemy * enemyStrengthGlobal)/4){
+            material = material - (enemy * enemyStrengthGlobal)/4;
+            pillage = pillage + (enemy * enemyStrengthGlobal)/4;
+            if (material < (enemy * enemyStrengthGlobal)/4) {
+            pillage = pillage + material;
             material = 0;
         }
     }
-    else if (food >= (enemy * enemyStrengthGlobal)/4){
-        food = food - (enemy * enemyStrengthGlobal)/4;
-        if (food < (enemy * enemyStrengthGlobal)/4) {
+        else if (food >= (enemy * enemyStrengthGlobal)/4){
+            food = food - (enemy * enemyStrengthGlobal)/4;
+            pillage = pillage + (enemy * enemyStrengthGlobal)/4;
+            if (food < (enemy * enemyStrengthGlobal)/4) {
+            pillage = pillage + food;
             food = 0;
-        }
-    }
-    else {
-        enemy = enemy - 1
-        document.getElementById('enemyCount').value = enemy;
-        //var enemyStrength = Math.floor(Math.random() * (militaryStrength * 1.15))
-        var enemyStrength = Math.floor(Math.random() * (militaryStrength) * 1.15) + 1;
-        enemyStrengthGlobal = enemyStrength;
-        document.getElementById('enemyStrength').value = enemyStrengthGlobal;
-        if (enemy < 1) {
-        document.getElementById('enemy').style.visibility = "hidden";
-        document.getElementById('enemyStrength').style.visibility = "hidden";
-        document.getElementById('enemyCount').style.visibility = "hidden";
             }
         }
     }
+    else if (enemy >= 1) {
+            pillage = 0;
+            enemy = enemy - 1
+            document.getElementById('enemyCount').value = enemy;
+            //var enemyStrength = Math.floor(Math.random() * (militaryStrength * 1.15))
+            var enemyStrength = Math.floor(Math.random() * (militaryStrength) * 1.15) + 1;
+            enemyStrengthGlobal = enemyStrength;
+            document.getElementById('enemyStrength').value = enemyStrengthGlobal;
+            if (enemy < 1) {
+            document.getElementById('enemy').style.visibility = "hidden";
+            document.getElementById('enemyStrength').style.visibility = "hidden";
+            document.getElementById('enemyCount').style.visibility = "hidden";
+        }
+    }
+}
 
+/* function enemyPillage() {
+    
+        if (luxury >= (enemy * enemyStrengthGlobal)/4){
+        luxury = luxury - (enemy * enemyStrengthGlobal)/4;
+            if (luxury < (enemy * enemyStrengthGlobal)/4) {
+            luxury = 0;
+        }
+    }
+        else if (material >= (enemy * enemyStrengthGlobal)/4){
+        material = material - (enemy * enemyStrengthGlobal)/4;
+            if (material < (enemy * enemyStrengthGlobal)/4) {
+            material = 0;
+        }
+    }
+        else if (food >= (enemy * enemyStrengthGlobal)/4){
+            food = food - (enemy * enemyStrengthGlobal)/4;
+            if (food < (enemy * enemyStrengthGlobal)/4) {
+            food = 0;
+        }
+    }
+        else {
+            enemy = enemy - 1
+            document.getElementById('enemyCount').value = enemy;
+            //var enemyStrength = Math.floor(Math.random() * (militaryStrength * 1.15))
+            var enemyStrength = Math.floor(Math.random() * (militaryStrength) * 1.15) + 1;
+            enemyStrengthGlobal = enemyStrength;
+            document.getElementById('enemyStrength').value = enemyStrengthGlobal;
+            if (enemy < 1) {
+            document.getElementById('enemy').style.visibility = "hidden";
+            document.getElementById('enemyStrength').style.visibility = "hidden";
+            document.getElementById('enemyCount').style.visibility = "hidden";
+            }
+        }
+    }
+*/
 
 
 
