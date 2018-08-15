@@ -1,0 +1,299 @@
+body {
+    font-family:sans-serif;
+}
+
+button {
+    background-color: rgba(255,255,255, 0.8);
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 6px;
+    position: relative;
+}
+
+#foodCount, #goldCount, #woodCount, #scienceCount, #materialCount, #luxuryCount, #aetherCount, #militaryCount, #populationCount, #enemyStrength, #enemyCount {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 0px;
+    text-align: center;
+}
+
+#save {
+    padding-left: 16px;
+    padding-right: 14px;
+}
+
+#load {
+    top: 2%;
+}
+/*TOOLTIP GOES HERE*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    width: 340%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 0;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    opacity: 0;
+    transition: opacity 2.5s;
+
+}
+
+.tooltiptextB {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    width: 385%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 0;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    opacity: 0;
+    transition: opacity 2.5s;
+    
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover .tooltiptextB {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 15%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.tooltip .tooltiptextB::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 15%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+/* HERE STARTS DIVISIONS LAYOUTS */
+#mainBlock {
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    left: 30%;
+    right: 30%;
+    top:0;
+    background-color: none;
+    position: absolute;
+    border-top: none;
+    border-bottom: none;
+}
+#leftBlock {
+    width: 30%;
+    height: 100%;
+    left:0;
+    top:0;
+    background-color: none;
+    position: absolute;
+    border: none;
+}
+#buildingBlock {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: none;
+    position: absolute;
+    border: none;
+    left: 0;
+}
+#unitBlock {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: none;
+    position: absolute;
+    border: none;
+    border-right: none;
+    left: 50%;
+}
+#rightBlock {
+    width: 30%;
+    height: 100%;
+    right:0;
+    top:0;
+    left:70%;
+    background-color: none;
+    position: absolute;
+    border: none;
+}
+#researchBlock{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: none;
+    position: absolute;
+    border: none;
+    border-left: none;
+    left: 0;
+}
+#wonderBlock{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: none;
+    position: absolute;
+    border: none;
+    left: 50%;
+}
+#footerBlock {
+    text-align: center;
+    width: 100%;
+    height: 9%;
+    bottom: 0;
+    right: 0%;
+    background-color: none;
+    position: absolute;
+    border: none;
+}
+
+html {
+    background-image: url(background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.header, .purchaseable {
+    border: 2px solid;
+    margin: 12px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.65);
+    padding: 0px;
+}
+.purchaseable {
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+#infoResearch {
+    height: 82%;
+}
+#infoBuilding {
+    height: 82%;
+}
+#infoUnit {
+    height: 82%;
+}
+#infoWonder {
+    height: 73%;
+}
+.icon {
+    height: 38px;
+    width: 38px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+.infoDisplay {
+    position: absolute;
+    left: 110%;
+    top: 4px;
+}
+p {
+    padding: 0px;
+}
+
+#foodCount, #woodCount, #goldCount, #scienceCount, #materialCount, #luxuryCount, #aetherCount, #militaryCount, #populationCount {
+    position: absolute;
+    border: none;
+    background:none;
+    width: 47.5%;
+    left: 2.5%;
+    border-radius: 20px;
+}
+
+
+
+#foodPS, #woodPS, #goldPS, #sciencePS, #materialPS, #luxuryPS, #aetherPS {
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    border: none;
+    right: 26.25%;
+    width: 23.75%;
+    background: none;
+    height: 22px;
+    border-radius: 20px;
+}
+
+
+
+
+
+#Food, #Wood, #Gold, #Science, #Material, #Luxury, #Aether, #Military, #Population {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding-right: 10px;
+    position: absolute;
+    right: 2.5%;
+    width: 23.75%;
+    border: none;
+    background: none;
+    height: 22px;
+    border-radius: 20px;
+}
+
+#hutDisplay {
+}
+
+.display {
+        width: 125px;
+        font-weight: bold;
+}
+
+.research {
+    
+}
+
+
+
+#enemy {
+    visibility: hidden;
+}
+
+
+
+
+
+#enemyStrength, #enemyCount {
+    border: none;
+    background:none;
+}
+
+
