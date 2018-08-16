@@ -222,9 +222,9 @@ button {
 }
 .infoDisplay {
     position: absolute;
-    left: 110%;
-    top: 4px;
-}
+    left:100%;
+    top: 0;
+} 
 p {
     padding: 0px;
 }
@@ -323,4 +323,4 @@ p {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: hidden; 
+    background: hidden; }
