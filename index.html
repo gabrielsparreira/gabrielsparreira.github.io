@@ -13,21 +13,22 @@
         <H1 class="header" >Civilization Builder</H1>
         <br>
         
-        <div class="header"><input type="text" id="populationCount" disabled style= text-align: center;><input id="Population"><h1 style="text-align: right;"></h1></div>    
+        <div class="header"><input type="text" id="populationCount" disabled style= text-align: center;><input id="Population" disabled style= text-align: center;><h1 style="text-align: right;"></h1></div>    
             
-        <div class="header"><input type="text" id="foodCount" disabled style= text-align: center;><input type="text" id="foodPS" disabled style= text-align: center;><input id="Food"><h1></h1></div>
+        <div class="header"><input type="text" id="foodCount" disabled style= text-align: center;><input type="text" id="foodPS" disabled style= text-align: center;><input id="Food" disabled style= text-align: center;><h1></h1></div>
         
-        <div class="header"><input type="text" id="materialCount" disabled style= text-align: center;><input type="text" id="materialPS" disabled style= text-align: center;><input id="Material"><h1 style="text-align: right;"></h1></div>
+        <div class="header"><input type="text" id="materialCount" disabled style= text-align: center;><input type="text" id="materialPS" disabled style= text-align: center;><input id="Material" disabled style= text-align: center;><h1 style="text-align: right;"></h1></div>
         
-        <div class="header"><input type="text" id="luxuryCount" disabled style= text-align: center;><input type="text" id="luxuryPS" disabled style= text-align: center;><input id="Luxury"><h1 style="text-align: right;"></h1></div>
+        <div class="header"><input type="text" id="luxuryCount" disabled style= text-align: center;><input type="text" id="luxuryPS" disabled style= text-align: center;><input id="Luxury" disabled style= text-align: center;><h1 style="text-align: right;"></h1></div>
         
-        <div class="header"><input type="text" id="scienceCount" disabled style= text-align: center;><input type="text" id="sciencePS" disabled style= text-align: center;><input id="Science"><h1 style="text-align: right;"></h1></div>
+        <div class="header"><input type="text" id="scienceCount" disabled style= text-align: center;><input type="text" id="sciencePS" disabled style= text-align: center;><input id="Science" disabled style= text-align: center;><h1 style="text-align: right;"></h1></div>
             
-        <div class="header"><input type="text" id="aetherCount" disabled style= text-align: center;><input type="text" id="aetherPS" disabled style= text-align: center;><input id="Aether"><h1 style="text-align: right;"></h1></div>
+        <div class="header"><input type="text" id="aetherCount" disabled style= text-align: center;><input type="text" id="aetherPS" disabled style= text-align: center;><input id="Aether" disabled style= text-align: center;><h1 style="text-align: right;"></h1></div>
             
-        <div class="header"><input type="text" id="militaryCount" disabled style= text-align: center;><input id="Military"><h1 style="text-align: right;"></h1></div>
+        <div class="header"><input type="text" id="militaryCount" disabled style= text-align: center;><input id="Military" disabled style= text-align: center;><h1 style="text-align: right;"></h1></div>
         
         <br><br><br>
+            <div class="unselectable">
         <button onclick="gather()" id="gatherButton">Gather some resources for your people!</button> 
         <br><br>
         <input type="text" id="enemyCount" disabled style= text-align: center;>
@@ -35,7 +36,7 @@
             <img src="Enemies.png" id="enemy" class="icon" onclick="attackEnemy()">
             <br>
         <input type="text" id="enemyStrength" style="color: red; text-shadow: 1px 1px 1px black;" disabled style= text-align: center;>
-        
+            </div>
     </div>
     
     <div id="leftBlock">
@@ -43,69 +44,89 @@
             <div class="header" id="headerBuilding"><h3>Buildings</h3></div>
             <div class="purchaseable" id="infoBuilding">
                 
+                <div class="unselectable">
                 <div class="tooltip"><img src="camp.png" class="icon" onclick="buyCamp()"><p id="tooltipCamp" class="tooltiptext    "></p>
-                <div class="infoDisplay"><p id="campDisplay" class="display"></p></div>
+                <div class="infoDisplay"><p id="campDisplay" class="display" onclick="buyCamp()"></p></div>
                 </div>
                 <br>
+                <div class="unselectable">
                 <div class="tooltip"><img src="hut.png" class="icon" onclick="buyHut()"><p id="tooltipHut" class="tooltiptext"></p>
                 <div class="infoDisplay"><p id="hutDisplay" class="display"></p></div>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
         <div id="unitBlock">
             <div class="header" id="headerUnit"><h3>Units</h3></div>
             <div class="purchaseable" id="infoUnit">
+                <div class="unselectable">
                 <div class="tooltip"><img src="villager.png" class="icon" onclick="buyVillager()">
                 <p id="tooltipVillager" class="tooltiptext"></p>  
-                <div class="infoDisplay"><p id="villagerDisplay" class="display"></p>
+                <div class="infoDisplay"><p id="villagerDisplay" class="display" onclick="buyVillager()"></p>
+                </div>
                 </div>
                 </div>
                 <br>
+                <div class="unselectable">
                 <div class="tooltip"><img src="hunter.png" class="icon" onclick="buyHunter()">
                 <p id="tooltipHunter" class="tooltiptext"></p>  
-                <div class="infoDisplay"><p id="hunterDisplay" class="display"></p>
+                <div class="infoDisplay"><p id="hunterDisplay" class="display" onclick="buyHunter()"></p>
+                </div>
                 </div>
                 </div>
                 <br>
                 <!--CHANGE VILLAGER PICTURE-->
+                <div class="unselectable">
                 <div class="tooltip"><img src="villager.png" class="icon" onclick="buyGatherer()">
                 <p id="tooltipGatherer" class="tooltiptext"></p>  
-                <div class="infoDisplay"><p id="gathererDisplay" class="display"></p>
+                <div class="infoDisplay"><p id="gathererDisplay" class="display" onclick="buyGatherer()"></p>
+                </div>
                 </div>
                 </div>
                 <br>
                 <!--CHANGE AGRICULTURE PICTURE-->
+                <div class="unselectable">
                 <div class="tooltip"><img src="Agriculture.png" class="icon" onclick="buyBuilder()">
                 <p id="tooltipBuilder" class="tooltiptext"></p>  
-                <div class="infoDisplay"><p id="builderDisplay" class="display"></p>
+                <div class="infoDisplay"><p id="builderDisplay" class="display" onclick="buyBuilder()"></p>
+                </div>
                 </div>
                 </div>
                 <br>
                 <!--CHANGE HUNTER PICTURE-->
+                <div class="unselectable">
                 <div class="tooltip"><img src="hunter.png" class="icon" onclick="buyElder()">
                 <p id="tooltipElder" class="tooltiptext"></p>  
-                <div class="infoDisplay"><p id="elderDisplay" class="display"></p>
+                <div class="infoDisplay"><p id="elderDisplay" class="display" onclick="buyElder()"></p>
+                </div>
                 </div>
                 </div>
                 <br>
                 <!--CHANGE VILLAGER PICTURE-->
+                <div class="unselectable">
                 <div class="tooltip"><img src="villager.png" class="icon" onclick="buyShaman()">
                 <p id="tooltipShaman" class="tooltiptext"></p>  
-                <div class="infoDisplay"><p id="shamanDisplay" class="display"></p>
+                <div class="infoDisplay"><p id="shamanDisplay" class="display" onclick="buyShaman()"></p>
+                </div>
                 </div>
                 </div>
                 <br>
                 <!--CHANGE AGRICULTURE PICTURE-->
+                <div class="unselectable">
                 <div class="tooltip"><img src="hunter.png" class="icon" onclick="buyMilitia()">
                 <p id="tooltipMilitia" class="tooltiptext"></p>  
-                <div class="infoDisplay"><p id="militiaDisplay" class="display"></p>
+                <div class="infoDisplay"><p id="militiaDisplay" class="display" onclick="buyMilitia()"></p>
+                </div>
                 </div>
                 </div>
                 <br>
                 <!--CHANGE AGRICULTURE PICTURE-->
+                <div class="unselectable">
                 <div class="tooltip" style="visibility: hidden" id="archerDiv"><img src="Agriculture.png" class="icon" onclick="buyArcher()">
                 <p id="tooltipArcher" class="tooltiptext"></p>  
-                <div class="infoDisplay"><p id="archerDisplay" class="display"></p>
+                <div class="infoDisplay"><p id="archerDisplay" class="display" onclick="buyArcher()"></p>
+                </div>
                 </div>
                 </div>
                 <br>
@@ -118,12 +139,16 @@
         <div id="researchBlock">
             <div class="header" id="headerResearch"><h3>Research</h3></div>
             <div class="purchaseable" id="infoResearch">
+                <div class="unselectable">
                 <div class="tooltip"><img src="Agriculture.png" onclick="buyAgriculture()" class="icon"><text id=""> </text> <p id="tooltipAgriculture" class="tooltiptext"></p>
-                <div class="infoDisplay"><p id="agricultureDisplay" class = "display"></p></div>
+                <div class="infoDisplay"><p id="agricultureDisplay" class = "display" onclick="buyAgriculture"></p></div>
+                </div>
                 </div>
                 <br>
+                <div class="unselectable">
                 <div class="tooltip" style="visibility: hidden" id="miningDiv"><img src="villager.png" onclick="buyMining()" class="icon"><text id=""> </text> <p id="tooltipMining" class="tooltiptext"></p>
-                <div class="infoDisplay"><p id="miningDisplay" class = "display"></p></div>
+                <div class="infoDisplay"><p id="miningDisplay" class = "display" onclick="buyMining"></p></div>
+                </div>
                 </div>
                 
             </div>
@@ -137,11 +162,34 @@
                 </div>
             </div>
             <div id="footerBlock">
-        <button id="save" onclick="save()">Save Progress</button> 
+        <button id="save" onclick="save()" on>Save Progress</button> 
             <button id="load" onclick="load()">Load Last Save</button>
             </div>
         </div>
     </div>
+            <div id="infoFooter">
+                <div id="leftWing">
+                </div>
+                <div id="middleWing">
+                </div>
+                <div id="rightWing">
+                    <div class="tooltipC">
+                    <img src="questionMark.png" class="info">
+                    <p id="tooltipQmark" class="tooltiptextC">
+                        
+                        Civilization Builder Version 1.4.2 	&trade;
+                        <br>
+                        <span id="smallerText">
+                            Author: Gabriel S. Parreira
+                            <br><br>
+                            This game was heavily inspired by Sid Meier's Civilization and the Age of Empires trilogy. It is still in development and I hope you enjoy! All the coding and images were made by myself and note: I've also learned HTML, CSS and JS by myself.
+                            <br><br>
+                            Email: gabriel.s.parreira@gmail.com
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 </body>
 </html>

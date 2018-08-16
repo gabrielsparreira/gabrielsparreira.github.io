@@ -70,12 +70,37 @@ button {
     
 }
 
+.tooltiptextC {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 0;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    opacity: 0;
+    transition: opacity 2.5s;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
 
 .tooltip:hover .tooltiptextB {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltipC:hover .tooltiptextC {
     visibility: visible;
     opacity: 1;
 }
@@ -99,6 +124,17 @@ button {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent black transparent;
+}
+
+.tooltipC .tooltiptextC::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    right: 17.5%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
 }
 /* HERE STARTS DIVISIONS LAYOUTS */
 #mainBlock {
@@ -173,7 +209,7 @@ button {
 #footerBlock {
     text-align: center;
     width: 100%;
-    height: 9%;
+    height: 15%;
     bottom: 0;
     right: 0%;
     background-color: none;
@@ -191,7 +227,7 @@ button {
 
 .header, .purchaseable {
     border: 2px solid;
-    margin: 10px;
+    margin: 5px;
     border-radius: 20px;
     background: rgba(255,255,255,0.65);
     padding: 0px;
@@ -257,6 +293,7 @@ p {
 
 
 #Food, #Wood, #Gold, #Science, #Material, #Luxury, #Aether, #Military, #Population {
+    color: black;
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
@@ -324,3 +361,46 @@ p {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: hidden; }
+
+.unselectable {
+    user-select: none;
+}
+
+#infoFooter {
+    position: relative;
+    top: 95%;
+    height: 5%;
+}
+
+#leftWing {
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+#middleWing {
+    width: 40%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 30%;   
+}
+
+#rightWing {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.info {
+    position: absolute;
+    height: 90%;
+    top: 0;
+    right: 18%;
+}
+#smallerText {
+    font-size: 90%;
+    color: darkgrey;
+}
