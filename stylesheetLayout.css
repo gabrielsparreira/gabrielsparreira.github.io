@@ -191,7 +191,7 @@ button {
 
 .header, .purchaseable {
     border: 2px solid;
-    margin: 12px;
+    margin: 10px;
     border-radius: 20px;
     background: rgba(255,255,255,0.65);
     padding: 0px;
@@ -304,3 +304,23 @@ p {
     padding-top: 8px;
     padding-left: 8px;
 }
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: hidden; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: hidden; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: hidden; 

@@ -647,7 +647,7 @@ function compoundVar() {
     luxuryProduction = ( ( ((0) + (0) + (0)) * (workerMultiplier)) +/*BUILDINGS*/ ((camp/10) + (0)) +/*WONDERS*/ (0) ) *luxuryMultiplier*totalMultiplier;
     
     
-    scienceProduction = ( ( ((villager/10) + (hunter/20) + (gatherer/20) + (builder/20)) * (workerMultiplier)) +/*BUILDINGS*/ ((camp/10) + (0)) +/*WONDERS*/ (0) ) *scienceMultiplier*totalMultiplier;
+    scienceProduction = ( ( ((villager/10) + (hunter/20) + (gatherer/20) + (builder/20) + (elder/2.5)) * (workerMultiplier)) +/*BUILDINGS*/ ((camp/10) + (0)) +/*WONDERS*/ (0) ) *scienceMultiplier*totalMultiplier;
     
     
     aetherProduction = (shaman/15) * globalMultiplier;
@@ -731,7 +731,13 @@ function buyBuilder() {
 }
 
 function buyElder() {
-    
+    if ((food >= elderCost)&&(population < populationMax)&&(science >= elderCost)) {
+        population = population + (1 / populationMultiplier);
+        food = food - elderCost;
+        science = science - elderCost;
+        elder = elder + 1;
+        elderCost = elderCost * unitcostMultiplier;
+    }
 }
 
 function buyShaman() {
@@ -795,7 +801,6 @@ function buyMining() {
 }
     //WONDERS//
 function buyArtemis() {
-    
 }
 
 //DECLARE INFO UPDATES HERE//
@@ -892,6 +897,17 @@ function update() {
     } else {
         document.getElementById('builderDisplay').style.color = "lime";
     }
+        
+        //ELDER//
+    if ((food < elderCost)||(population == populationMax)||(science < elderCost)) {document.getElementById('elderDisplay').innerHTML = Math.round(elderCost*100)/100 + " food & science.";
+                            document.getElementById('elderDisplay').style.color = "red";
+                            document.getElementById('elderDisplay').style.textShadow = "1px 1px 1px black";                           
+                           } else {
+                            document.getElementById('elderDisplay').innerHTML = Math.round(elderCost*100)/100 + " food & science.";
+                            document.getElementById('elderDisplay').style.color = "lime";
+                            document.getElementById('elderDisplay').style.textShadow = "1px 1px 1px black"; 
+                           }
+    document.getElementById('tooltipElder').innerHTML = "A wise old person who shares his or her knowledge with others, generating more science. Each elder costs: " + Math.round(elderCost*100)/100 + " food and science. You have: " + elder + " Elders lecturing.";
 
     
         //SHAMAN//
@@ -908,7 +924,7 @@ function update() {
     
         //MILITIA//
     if ((villager < 1)||(material < 5)||(luxury < 5)) {
-                            document.getElementById('militiaDisplay').innerHTML = "1 vil, " + militiaCost + " mat and lux";
+                            document.getElementById('militiaDisplay').innerHTML = "1 villager, " + militiaCost + " materials and luxuries";
                             document.getElementById('militiaDisplay').style.color = "red";
                             document.getElementById('militiaDisplay').style.textShadow = "1px 1px 1px black";
                             }  else {
