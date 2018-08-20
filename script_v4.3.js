@@ -1,7 +1,7 @@
 //DECLARE VARIABLES HERE//
         
 //RESOURCES//
-var population = 0;
+var population = 5;
 var populationMax = 10;
 var food = 0;
 var material = 0;
@@ -138,80 +138,80 @@ var programmer = 0;
 //AFTER NUCLEAR FUSION//
 var aethersoldier = 0;
 
-//UNIT COSTS//
-var villagerCost = 1;
-var hunterCost = 1.5;
-var gathererCost = 1.5;
-var builderCost = 1.5;
-var elderCost = 1.5;
-var shamanCost = 1.5;
-var militiaCost = 5;
-var farmerCost = 2;
-var woodcutterCost = 2;
-var collectorCost = 2;
-var healerCost = 2;
-var caravanCost = 2;
-var shepardCost = 2;
-var archerCost = 2.5;
-var wagonCost = 3;
-var minerCost = 3;
-var spearmanCost = 3;
-var fishermanCost = 3;
-var sailorCost = 2.5;
-var scholarCost = 2.5;
-var prophetCost = 3;
-var horsemanCost = 4;
-var bowmanCost = 3.5;
-var lumberjackCost = 4;
-var philosopherCost = 5;
-var merchantCost = 4;
-var engineerCost = 4;
-var swordsmanCost = 3.5;
-var priestCost = 4;
-var mageCost = 5;
-var pikemanCost = 5;
-var blacksmithCost = 4.5;
-var captainCost = 5;
-var pirateCost = 5;
-var highscholarCost = 7;
-var archmageCost = 7;
-var knightCost = 7;
-var paladinCost = 6.5;
-var crossbowmanCost = 6.5;
-var longswordsmanCost = 6.5;
-var navigatorCost = 7;
-var bankerCost = 8;
-var musketmanCost = 9;
-var commodoreCost = 9;
-var economistCost = 10;
-var lancerCost = 9;
-var chemistCost = 10;
-var alchemistCost = 10;
-var explorerCost = 10;
-var scientistCost = 12;
-var wizardCost = 12;
-var gatlinggunCost = 12;
-var operatorCost = 15;
-var riflemanCost = 15;
-var warmageCost = 15;
-var cavalryCost = 15;
-var herbalistCost = 15;
-var techmageCost = 20;
-var infantryCost = 20;
-var pilotCost = 25;
-var aetherpilotCost = 30;
-var heavyinfantryCost = 30;
-var machinegunnerCost = 25;
-var warwagonCost = 35;
-var marineCost = 30;
-var atomicmageCost = 35;
-var academicCost = 35;
-var advancedpilotCost = 35;
-var tankCost = 45;
-var creationmageCost = 45;
-var astronautCost = 50;
-var programmerCost = 50;
-var aethersoldierCost = 60;
+//UNITS COSTS//
+    var villagerCost = 1;
+    var hunterCost = 1.5;
+    var elderCost = 1.5;
+    var gathererCost = 1.5;
+    var builderCost = 1.5;
+    var shamanCost = 1.5;
+    var militiaCost = 5;
+    var farmerCost = 2;
+    var woodcutterCost = 2;
+    var collectorCost = 2;
+    var healerCost = 2;
+    var caravanCost = 2;
+    var shepardCost = 2;
+    var archerCost = 2.5;
+    var wagonCost = 3;
+    var minerCost = 3;
+    var spearmanCost = 3;
+    var fishermanCost = 3;
+    var sailorCost = 2.5;
+    var scholarCost = 2.5;
+    var prophetCost = 3;
+    var horsemanCost = 4;
+    var bowmanCost = 3.5;
+    var lumberjackCost = 4;
+    var philosopherCost = 5;
+    var merchantCost = 4;
+    var engineerCost = 4;
+    var swordsmanCost = 3.5;
+    var priestCost = 4;
+    var mageCost = 5;
+    var pikemanCost = 5;
+    var blacksmithCost = 4.5;
+    var captainCost = 5;
+    var pirateCost = 5;
+    var highscholarCost = 7;
+    var archmageCost = 7;
+    var knightCost = 7;
+    var paladinCost = 6.5;
+    var crossbowmanCost = 6.5;
+    var longswordsmanCost = 6.5;
+    var navigatorCost = 7;
+    var bankerCost = 8;
+    var musketmanCost = 9;
+    var commodoreCost = 9;
+    var economistCost = 10;
+    var lancerCost = 9;
+    var chemistCost = 10;
+    var alchemistCost = 10;
+    var explorerCost = 10;
+    var scientistCost = 12;
+    var wizardCost = 12;
+    var gatlinggunCost = 12;
+    var operatorCost = 15;
+    var riflemanCost = 15;
+    var warmageCost = 15;
+    var cavalryCost = 15;
+    var herbalistCost = 15;
+    var techmageCost = 20;
+    var infantryCost = 20;
+    var pilotCost = 25;
+    var aetherpilotCost = 30;
+    var heavyinfantryCost = 30;
+    var machinegunnerCost = 25;
+    var warwagonCost = 35;
+    var marineCost = 30;
+    var atomicmageCost = 35;
+    var academicCost = 35;
+    var advancedpilotCost = 35;
+    var tankCost = 45;
+    var creationmageCost = 45;
+    var astronautCost = 50;
+    var programmerCost = 50;
+    var aethersoldierCost = 60;
 
 //BUILDINGS//
 //INITIAL BUILDINGS//
@@ -336,75 +336,75 @@ var genesisstasis = 0;
 //AFTER GENETIC ENGINEERING//
 var genesisclinic = 0;
 
-//BUILDING COSTS//
-var campCost = 0.5;
-var hutCost = 1;
-var towncentreCost = 4;
-var farmCost = 2;
-var cottageCost = 2.5;
-var mineCost = 2.5;
-var granaryCost = 2.5;
-var totemCost = 2.5;
-var livestockCost = 2.5;
-var watermillCost = 3;
-var barrackCost = 3;
-var dockCost = 3.5;
-var libraryCost = 3.5;
-var altarCost = 3.5;
-var plantationCost = 3.5;
-var trapCost = 3;
-var quarryCost = 3.5;
-var stableCost = 4;
-var arenaCost = 4;
-var lumbermillCost = 4.5;
-var terracefarmCost = 4.5;
-var lighthouseCost = 4.5;
-var parkCost = 5;
-var templeCost = 5;
-var theatreCost = 6;
-var marketCost = 6;
-var fortCost = 7;
-var houseCost = 7;
-var forgeCost = 7;
-var sanctuaryCost = 7;
-var gardenCost = 7;
-var tradingpostCost = 9;
-var workshopCost = 9;
-var harborCost = 9;
-var universityCost = 10;
-var mageacademyCost = 12;
-var castleCost = 12;
-var forthavenCost = 14;
-var armoryCost = 12;
-var observatoryCost = 14;
-var arcanebatteryCost = 20;
-var concerthouseCost = 20;
-var bankCost = 20;
-var seaportCost = 20;
-var buildingCost = 20;
-var windmillCost = 20;
-var arsenalCost = 20;
-var historicsiteCost = 25;
-var schoolCost = 25;
-var factoryCost = 30;
-var oilwellCost = 30;
-var hydroplantCost = 30;
-var broadcasttowerCost = 35;
-var researchlabCost = 35;
-var medicallabCost = 35;
-var academyCost = 40;
-var airportCost = 40;
-var nuclearplantCost = 45;
-var solarplantCost = 45;
-var spaceshipfactoryCost = 50;
-var skyscraperCost = 45;
-var hawk9Cost = 60;
-var genesiscockpitCost = 70;
-var hawkheavyCost = 80;
-var genesisengineCost = 80;
-var genesisstasisCost = 90;
-var genesisclinicCost = 100;
-    
+//BUILDINGS COSTS//
+    var campCost = 0.5;
+    var hutCost = 1;
+    var towncentreCost = 4;
+    var farmCost = 2;
+    var cottageCost = 2.5;
+    var mineCost = 2.5;
+    var granaryCost = 2.5;
+    var totemCost = 2.5;
+    var livestockCost = 2.5;
+    var watermillCost = 3;
+    var barrackCost = 3;
+    var dockCost = 3.5;
+    var libraryCost = 3.5;
+    var altarCost = 3.5;
+    var plantationCost = 3.5;
+    var trapCost = 3;
+    var quarryCost = 3.5;
+    var stableCost = 4;
+    var arenaCost = 4;
+    var lumbermillCost = 4.5;
+    var terracefarmCost = 4.5;
+    var lighthouseCost = 4.5;
+    var parkCost = 5;
+    var templeCost = 5;
+    var theatreCost = 6;
+    var marketCost = 6;
+    var fortCost = 7;
+    var houseCost = 7;
+    var forgeCost = 7;
+    var sanctuaryCost = 7;
+    var gardenCost = 7;
+    var tradingpostCost = 9;
+    var workshopCost = 9;
+    var harborCost = 9;
+    var universityCost = 10;
+    var mageacademyCost = 12;
+    var castleCost = 12;
+    var forthavenCost = 14;
+    var armoryCost = 12;
+    var observatoryCost = 14;
+    var arcanebatteryCost = 20;
+    var concerthouseCost = 20;
+    var bankCost = 20;
+    var seaportCost = 20;
+    var buildingCost = 20;
+    var windmillCost = 20;
+    var arsenalCost = 20;
+    var historicsiteCost = 25;
+    var schoolCost = 25;
+    var factoryCost = 30;
+    var oilwellCost = 30;
+    var hydroplantCost = 30;
+    var broadcasttowerCost = 35;
+    var researchlabCost = 35;
+    var medicallabCost = 35;
+    var academyCost = 40;
+    var airportCost = 40;
+    var nuclearplantCost = 45;
+    var solarplantCost = 45;
+    var spaceshipfactoryCost = 50;
+    var skyscraperCost = 45;
+    var hawk9Cost = 60;
+    var genesiscockpitCost = 70;
+    var hawkheavyCost = 80;
+    var genesisengineCost = 80;
+    var genesisstasisCost = 90;
+    var genesisclinicCost = 100;
+
 //RESEARCH//
 var agriculture = 0;
 var mining = 0;
@@ -652,9 +652,156 @@ function compoundVar() {
     
     aetherProduction = (shaman/15) * globalMultiplier;
     
+    
     militaryStrength = military + (militia) + (archer * 2) + (spearman * 3);
     
     update()
+}
+
+function costsDef() {
+    //UNITS//
+    villagerCost = 1 * (Math.pow(unitcostMultiplier, villager));
+    hunterCost = 1.5 * (Math.pow(unitcostMultiplier, hunter));
+    elderCost = 1.5 * (Math.pow(unitcostMultiplier, elder));
+    gathererCost = 1.5 * (Math.pow(unitcostMultiplier, gatherer));
+    builderCost = 1.5 * (Math.pow(unitcostMultiplier, builder));
+    shamanCost = 1.5 * (Math.pow(unitcostMultiplier, shaman));
+    militiaCost = 5 * (Math.pow(unitcostMultiplier, militia));
+    farmerCost = 2 * (Math.pow(unitcostMultiplier, farmer));
+    woodcutterCost = 2 * (Math.pow(unitcostMultiplier, woodcutter));
+    collectorCost = 2 * (Math.pow(unitcostMultiplier, collector));
+    healerCost = 2 * (Math.pow(unitcostMultiplier, healer));
+    caravanCost = 2 * (Math.pow(unitcostMultiplier, caravan));
+    shepardCost = 2 * (Math.pow(unitcostMultiplier, shepard));
+    archerCost = 2.5 * (Math.pow(unitcostMultiplier, archer));
+    wagonCost = 3 * (Math.pow(unitcostMultiplier, wagon));
+    minerCost = 3 * (Math.pow(unitcostMultiplier, miner));
+    spearmanCost = 3 * (Math.pow(unitcostMultiplier, spearman));
+    fishermanCost = 3 * (Math.pow(unitcostMultiplier, fisherman));
+    sailorCost = 2.5 * (Math.pow(unitcostMultiplier, sailor));
+    scholarCost = 2.5 * (Math.pow(unitcostMultiplier, scholar));
+    prophetCost = 3 * (Math.pow(unitcostMultiplier, prophet));
+    horsemanCost = 4 * (Math.pow(unitcostMultiplier, horseman));
+    bowmanCost = 3.5 * (Math.pow(unitcostMultiplier, bowman));
+    lumberjackCost = 4 * (Math.pow(unitcostMultiplier, lumberjack));
+    philosopherCost = 5 * (Math.pow(unitcostMultiplier, philosopher));
+    merchantCost = 4 * (Math.pow(unitcostMultiplier, merchant));
+    engineerCost = 4 * (Math.pow(unitcostMultiplier, engineer));
+    swordsmanCost = 3.5 * (Math.pow(unitcostMultiplier, swordsman));
+    priestCost = 4 * (Math.pow(unitcostMultiplier, priest));
+    mageCost = 5 * (Math.pow(unitcostMultiplier, mage));
+    pikemanCost = 5 * (Math.pow(unitcostMultiplier, pikeman));
+    blacksmithCost = 4.5 * (Math.pow(unitcostMultiplier, blacksmith));
+    captainCost = 5 * (Math.pow(unitcostMultiplier, captain));
+    pirateCost = 5 * (Math.pow(unitcostMultiplier, pirate));
+    highscholarCost = 7 * (Math.pow(unitcostMultiplier, highscholar));
+    archmageCost = 7 * (Math.pow(unitcostMultiplier, archmage));
+    knightCost = 7 * (Math.pow(unitcostMultiplier, knight));
+    paladinCost = 6.5 * (Math.pow(unitcostMultiplier, paladin));
+    crossbowmanCost = 6.5 * (Math.pow(unitcostMultiplier, crossbowman));
+    longswordsmanCost = 6.5 * (Math.pow(unitcostMultiplier, longswordsman));
+    navigatorCost = 7 * (Math.pow(unitcostMultiplier, navigator1));
+    bankerCost = 8 * (Math.pow(unitcostMultiplier, banker));
+    musketmanCost = 9 * (Math.pow(unitcostMultiplier, musketman));
+    commodoreCost = 9 * (Math.pow(unitcostMultiplier, commodore));
+    economistCost = 10 * (Math.pow(unitcostMultiplier, economist));
+    lancerCost = 9 * (Math.pow(unitcostMultiplier, lancer));
+    chemistCost = 10 * (Math.pow(unitcostMultiplier, chemist));
+    alchemistCost = 10 * (Math.pow(unitcostMultiplier, alchemist));
+    explorerCost = 10 * (Math.pow(unitcostMultiplier, explorer));
+    scientistCost = 12 * (Math.pow(unitcostMultiplier, scientist));
+    wizardCost = 12 * (Math.pow(unitcostMultiplier, wizard));
+    gatlinggunCost = 12 * (Math.pow(unitcostMultiplier, gatlinggun));
+    operatorCost = 15 * (Math.pow(unitcostMultiplier, operator));
+    riflemanCost = 15 * (Math.pow(unitcostMultiplier, rifleman));
+    warmageCost = 15 * (Math.pow(unitcostMultiplier, warmage));
+    cavalryCost = 15 * (Math.pow(unitcostMultiplier, cavalry));
+    herbalistCost = 15 * (Math.pow(unitcostMultiplier, herbalist));
+    techmageCost = 20 * (Math.pow(unitcostMultiplier, techmage));
+    infantryCost = 20 * (Math.pow(unitcostMultiplier, infantry));
+    pilotCost = 25 * (Math.pow(unitcostMultiplier, pilot));
+    aetherpilotCost = 30 * (Math.pow(unitcostMultiplier, aetherpilot));
+    heavyinfantryCost = 30 * (Math.pow(unitcostMultiplier, heavyinfantry));
+    machinegunnerCost = 25 * (Math.pow(unitcostMultiplier, machinegunner));
+    warwagonCost = 35 * (Math.pow(unitcostMultiplier, warwagon));
+    marineCost = 30 * (Math.pow(unitcostMultiplier, marine));
+    atomicmageCost = 35 * (Math.pow(unitcostMultiplier, atomicmage));
+    academicCost = 35 * (Math.pow(unitcostMultiplier, academic));
+    advancedpilotCost = 35 * (Math.pow(unitcostMultiplier, advancedpilot));
+    tankCost = 45 * (Math.pow(unitcostMultiplier, tank));
+    creationmageCost = 45 * (Math.pow(unitcostMultiplier, creationmage));
+    astronautCost = 50 * (Math.pow(unitcostMultiplier, astronaut));
+    programmerCost = 50 * (Math.pow(unitcostMultiplier, programmer));
+    aethersoldierCost = 60 * (Math.pow(unitcostMultiplier, aethersoldier));
+    //BUILDINGS//
+    campCost = 0.5 * (Math.pow(buildingcostMultiplier, camp));
+    hutCost = 1 * (Math.pow(buildingcostMultiplier, hut));
+    towncentreCost = 4 * (Math.pow(buildingcostMultiplier, towncentre));
+    farmCost = 2 * (Math.pow(buildingcostMultiplier, farm));
+    cottageCost = 2.5 * (Math.pow(buildingcostMultiplier, cottage));
+    mineCost = 2.5 * (Math.pow(buildingcostMultiplier, mine));
+    granaryCost = 2.5 * (Math.pow(buildingcostMultiplier, granary));
+    totemCost = 2.5 * (Math.pow(buildingcostMultiplier, totem));
+    livestockCost = 2.5 * (Math.pow(buildingcostMultiplier, livestock));
+    watermillCost = 3 * (Math.pow(buildingcostMultiplier, watermill));
+    barrackCost = 3 * (Math.pow(buildingcostMultiplier, barrack));
+    dockCost = 3.5 * (Math.pow(buildingcostMultiplier, dock));
+    libraryCost = 3.5 * (Math.pow(buildingcostMultiplier, library));
+    altarCost = 3.5 * (Math.pow(buildingcostMultiplier, altar));
+    plantationCost = 3.5 * (Math.pow(buildingcostMultiplier, plantation));
+    trapCost = 3 * (Math.pow(buildingcostMultiplier, trap));
+    quarryCost = 3.5 * (Math.pow(buildingcostMultiplier, quarry));
+    stableCost = 4 * (Math.pow(buildingcostMultiplier, stable));
+    arenaCost = 4 * (Math.pow(buildingcostMultiplier, arena));
+    lumbermillCost = 4.5 * (Math.pow(buildingcostMultiplier, lumbermill));
+    terracefarmCost = 4.5 * (Math.pow(buildingcostMultiplier, terracefarm));
+    lighthouseCost = 4.5 * (Math.pow(buildingcostMultiplier, lighthouse));
+    parkCost = 5 * (Math.pow(buildingcostMultiplier, park));
+    templeCost = 5 * (Math.pow(buildingcostMultiplier, temple));
+    theatreCost = 6 * (Math.pow(buildingcostMultiplier, theatre));
+    marketCost = 6 * (Math.pow(buildingcostMultiplier, market));
+    fortCost = 7 * (Math.pow(buildingcostMultiplier, fort));
+    houseCost = 7 * (Math.pow(buildingcostMultiplier, house));
+    forgeCost = 7 * (Math.pow(buildingcostMultiplier, forge));
+    sanctuaryCost = 7 * (Math.pow(buildingcostMultiplier, sanctuary));
+    gardenCost = 7 * (Math.pow(buildingcostMultiplier, garden));
+    tradingpostCost = 9 * (Math.pow(buildingcostMultiplier, tradingpost));
+    workshopCost = 9 * (Math.pow(buildingcostMultiplier, workshop));
+    harborCost = 9 * (Math.pow(buildingcostMultiplier, harbor));
+    universityCost = 10 * (Math.pow(buildingcostMultiplier, university));
+    mageacademyCost = 12 * (Math.pow(buildingcostMultiplier, mageacademy));
+    castleCost = 12 * (Math.pow(buildingcostMultiplier, castle));
+    forthavenCost = 14 * (Math.pow(buildingcostMultiplier, forthaven));
+    armoryCost = 12 * (Math.pow(buildingcostMultiplier, armory));
+    observatoryCost = 14 * (Math.pow(buildingcostMultiplier, observatory));
+    arcanebatteryCost = 20 * (Math.pow(buildingcostMultiplier, arcanebattery));
+    concerthouseCost = 20 * (Math.pow(buildingcostMultiplier, concerthouse));
+    bankCost = 20 * (Math.pow(buildingcostMultiplier, bank));
+    seaportCost = 20 * (Math.pow(buildingcostMultiplier, seaport));
+    buildingCost = 20 * (Math.pow(buildingcostMultiplier, building));
+    windmillCost = 20 * (Math.pow(buildingcostMultiplier, windmill));
+    arsenalCost = 20 * (Math.pow(buildingcostMultiplier, arsenal));
+    historicsiteCost = 25 * (Math.pow(buildingcostMultiplier, historicsite));
+    schoolCost = 25 * (Math.pow(buildingcostMultiplier, school));
+    factoryCost = 30 * (Math.pow(buildingcostMultiplier, factory));
+    oilwellCost = 30 * (Math.pow(buildingcostMultiplier, oilwell));
+    hydroplantCost = 30 * (Math.pow(buildingcostMultiplier, hydroplant));
+    broadcasttowerCost = 35 * (Math.pow(buildingcostMultiplier, broadcasttower));
+    researchlabCost = 35 * (Math.pow(buildingcostMultiplier, researchlab));
+    medicallabCost = 35 * (Math.pow(buildingcostMultiplier, medicallab));
+    academyCost = 40 * (Math.pow(buildingcostMultiplier, academy));
+    airportCost = 40 * (Math.pow(buildingcostMultiplier, airport));
+    nuclearplantCost = 45 * (Math.pow(buildingcostMultiplier, nuclearplant));
+    solarplantCost = 45 * (Math.pow(buildingcostMultiplier, solarplant));
+    spaceshipfactoryCost = 50 * (Math.pow(buildingcostMultiplier, spaceshipfactory));
+    skyscraperCost = 45 * (Math.pow(buildingcostMultiplier, skyscraper));
+    hawk9Cost = 60 * (Math.pow(buildingcostMultiplier, hawk9));
+    genesiscockpitCost = 70 * (Math.pow(buildingcostMultiplier, genesiscockpit));
+    hawkheavyCost = 80 * (Math.pow(buildingcostMultiplier, hawkheavy));
+    genesisengineCost = 80 * (Math.pow(buildingcostMultiplier, genesisengine));
+    genesisstasisCost = 90 * (Math.pow(buildingcostMultiplier, genesisstasis));
+    genesisclinicCost = 100 * (Math.pow(buildingcostMultiplier, genesisclinic));
+    update ()
 }
 
 //DECLARE BUTTONS HERE//  
@@ -697,59 +844,53 @@ function buyVillager() {
         population = population + (1 / populationMultiplier);
         food = food - villagerCost;
         villager = villager + 1;
-        villagerCost = villagerCost * unitcostMultiplier;
         update()
     }
 }
 //HUNTER//
 function buyHunter() {
-    if ((food >= hunterCost)&&(population < populationMax)) {
-        population = population + (1 / populationMultiplier);
+    if ((food >= hunterCost)&&(villager > 0)) {
+        villager = villager - 1;
         food = food - hunterCost;
         hunter = hunter + 1;
-        hunterCost = hunterCost * unitcostMultiplier;
         update()
         }
 }
 //GATHERER//
 function buyGatherer() {
-    if ((food >= gathererCost)&&(population < populationMax)) {
-        population = population + (1 / populationMultiplier);
+    if ((food >= gathererCost)&&(villager > 0)) {
+        villager = villager - 1;
         food = food - gathererCost;
         gatherer = gatherer + 1;
-        gathererCost = gathererCost * unitcostMultiplier;
         update()
     }
 }
 //BUILDER//
 function buyBuilder() {
-    if ((food >= builderCost)&&(population < populationMax)&&(buildingcostMultiplier > 1.05)) {
-        population = population + (1 / populationMultiplier);
+    if ((food >= builderCost)&&(villager > 0)&&(buildingcostMultiplier > 1.05)) {
+        villager = villager - 1;
         food = food - builderCost;
         builder = builder + 1;
-        builderCost = builderCost * unitcostMultiplier;
         buildingcostMultiplier = buildingcostMultiplier - (workerMultiplier * (buildingcostMultiplier/100));
         update()
     }   
 }
 //ELDER//
 function buyElder() {
-    if ((food >= elderCost)&&(population < populationMax)&&(science >= elderCost)) {
-        population = population + (1 / populationMultiplier);
+    if ((food >= elderCost)&&(villager > 0)&&(science >= elderCost)) {
+        villager = villager - 1;
         food = food - elderCost;
         science = science - elderCost;
         elder = elder + 1;
-        elderCost = elderCost * unitcostMultiplier;
         update()
     }
 }
 //SHAMAN//
 function buyShaman() {
-    if ((food >= shamanCost)&&(population < populationMax)) {
-        population = population + (1 / populationMultiplier);
+    if ((food >= shamanCost)&&(villager > 0)) {
+        villager = villager - 1;
         food = food - shamanCost;
         shaman = shaman + 1;
-        shamanCost = shamanCost * unitcostMultiplier;
         update()
     }
     
@@ -758,11 +899,10 @@ function buyShaman() {
 //MILITARY UNITS//
 //MILITIA//
 function buyMilitia() {
-    if ((villager >= 1)&&(material >= 5)&&(luxury >= 5)) {
+    if ((villager >= 1)&&(material >= militiaCost)&&(luxury >= militiaCost)) {
         villager = villager - 1;
-        villagerCost = villagerCost / 1.15;
-        material = material - 5;
-        luxury = luxury - 5;
+        material = material - militiaCost;
+        luxury = luxury - militiaCost;
         militia = militia + 1;
         update()
     }
@@ -770,23 +910,23 @@ function buyMilitia() {
 
 //FARMER//
 function buyFarmer() {
-    if ((food >= farmerCost)&&(population < populationMax)&&(farmer <= (farm * 10))) {
+    if ((food >= farmerCost)&&(farmer <= (farm * 10))&&(villager > 0)) {
         food = food - farmerCost;
+        villager = villager - 1;
         farmer = farmer + 1;
-        population = population + 1;
+        update ()
     }
 }
 
 
 //ARCHER//
 function buyArcher() {
-    if ((food >= archerCost)&&(material >= archerCost)&&(luxury >= archerCost)&&(population<populationMax)) {
+    if ((food >= archerCost)&&(material >= archerCost)&&(luxury >= archerCost)&&(villager > 0)) {
         food = food - archerCost;
         material = material - archerCost;
         luxury = luxury - archerCost;
-        population = population + (1 / populationMultiplier);
+        villager = villager - 1;
         archer = archer + 1;
-        archerCost = archerCost * unitcostMultiplier;
         update()
     }
 }
@@ -847,121 +987,113 @@ function update() {
     //BUILDINGS//
         
         //CAMP//
-     if (material < campCost*buildingcostMultiplier) {document.getElementById('campDisplay').innerHTML = Math.round(campCost*buildingcostMultiplier*100)/100 + " materials.";
-                                                     document.getElementById('campDisplay').style.color = "red";
-                                                     document.getElementById('campDisplay').style.textShadow = "1px 1px 1px black";
-                                                    } else {
-                                                        document.getElementById('campDisplay').innerHTML = Math.round(campCost*buildingcostMultiplier*100)/100 + " materials.";
-                                                     document.getElementById('campDisplay').style.color = "lime";
-                                                     document.getElementById('campDisplay').style.textShadow = "1px 1px 1px black";
-                                                    }
+    document.getElementById('campDisplay').innerHTML = Math.round(campCost*buildingcostMultiplier*100)/100 + " materials.";
     document.getElementById('tooltipCamp').innerHTML = "First type of settlement, grants a bit of the main resources. Each camp costs: " + Math.round(campCost*buildingcostMultiplier*100)/100 + " materials. You have: " + camp + " Camps.";
+    document.getElementById('campDisplay').style.textShadow = "1px 1px 1px black";
+        if (material < campCost*buildingcostMultiplier) {
+            document.getElementById('campDisplay').style.color = "red";
+        } 
+        else {                                                    
+            document.getElementById('campDisplay').style.color = "lime";
+        }
     
         //HUT//
-    if (material < hutCost*buildingcostMultiplier) {document.getElementById('hutDisplay').innerHTML = Math.round(hutCost*buildingcostMultiplier*100)/100 + " materials.";
-                                                    document.getElementById('hutDisplay').style.color = "red";
-                                                    document.getElementById('hutDisplay').style.textShadow = "1px 1px 1px black";
-                                                    }  else {
-                                                        document.getElementById('hutDisplay').innerHTML = Math.round(hutCost*buildingcostMultiplier*100)/100 + " materials.";
-                                                        document.getElementById('hutDisplay').style.color = "lime";
-                                                        document.getElementById('hutDisplay').style.textShadow = "1px 1px 1px black";
-                                                    }
+    document.getElementById('hutDisplay').innerHTML = Math.round(hutCost*buildingcostMultiplier*100)/100 + " materials.";
     document.getElementById('tooltipHut').innerHTML = "A small hut supports 5 population. Each Hut costs: " + Math.round(hutCost*buildingcostMultiplier*100)/100 + " materials. You have: " + hut + " Huts.";
+    document.getElementById('hutDisplay').style.textShadow = "1px 1px 1px black";
+        if (material < hutCost*buildingcostMultiplier) {
+            document.getElementById('hutDisplay').style.color = "red";
+        }  
+        else {
+            document.getElementById('hutDisplay').style.color = "lime";
+        }
         
     //BASIC UNITS//
     
         //VILLAGER//
-    if ((food < villagerCost)||(population == populationMax)) {document.getElementById('villagerDisplay').innerHTML = Math.round(villagerCost*100)/100 + " food.";
-                                document.getElementById('villagerDisplay').style.color = "red";
-                                document.getElementById('villagerDisplay').style.textShadow = "1px 1px 1px black";
-                                                    }  else {
-                                                        document.getElementById('villagerDisplay').innerHTML = Math.round(villagerCost*100)/100 + " food.";
-                                                        document.getElementById('villagerDisplay').style.color = "lime";
-                                                        document.getElementById('villagerDisplay').style.textShadow = "1px 1px 1px black";
-                                                            }                         
+    document.getElementById('villagerDisplay').innerHTML = Math.round(villagerCost*100)/100 + " food.";
     document.getElementById('tooltipVillager').innerHTML = "A villager moves in to your city! Each villager costs: " + Math.round(villagerCost*100)/100 + " food and produces: food, material and science. You have: " + villager + " Villagers.";
+    document.getElementById('villagerDisplay').style.textShadow = "1px 1px 1px black";
+        if ((food < villagerCost)||(population == populationMax)) {
+            document.getElementById('villagerDisplay').style.color = "red";
+        }
+        else {
+            document.getElementById('villagerDisplay').style.color = "lime";
+        }
     
         //HUNTER//
-    if ((food < hunterCost)||(population == populationMax)) {document.getElementById('hunterDisplay').innerHTML = Math.round(hunterCost*100)/100 + " food.";
-                            document.getElementById('hunterDisplay').style.color = "red";
-                            document.getElementById('hunterDisplay').style.textShadow = "1px 1px 1px black";                           
-                           } else {
-                            document.getElementById('hunterDisplay').innerHTML = Math.round(hunterCost*100)/100 + " food.";
-                            document.getElementById('hunterDisplay').style.color = "lime";
-                            document.getElementById('hunterDisplay').style.textShadow = "1px 1px 1px black"; 
-                           }
-    document.getElementById('tooltipHunter').innerHTML = "Skilled in hunting for wild animals. Each hunter costs: " + Math.round(hunterCost*100)/100 + " food. You have: " + hunter + " Hunters.";
+    document.getElementById('hunterDisplay').innerHTML = Math.round(hunterCost*100)/100 + " food & 1 villager.";
+    document.getElementById('tooltipHunter').innerHTML = "Skilled in hunting for wild animals. Each hunter costs: " + Math.round(hunterCost*100)/100 + " food and 1 villager. You have: " + hunter + " Hunters.";
+    document.getElementById('hunterDisplay').style.textShadow = "1px 1px 1px black";
+        if ((food < hunterCost)||(villager == 0)) {
+            document.getElementById('hunterDisplay').style.color = "red";
+        }
+        else {
+            document.getElementById('hunterDisplay').style.color = "lime";
+        }
     
         //GATHERER//
-     document.getElementById('gathererDisplay').innerHTML = Math.round(gathererCost*100)/100 + " food.";
-    document.getElementById('tooltipGatherer').innerHTML = "Dedicated to gathering building materials. Each gatherer costs: " + Math.round(gathererCost*100)/100 + " food. You have: " + gatherer + " Gatherers.";
-    if ((food < gathererCost)||(population == populationMax)) {
+    document.getElementById('gathererDisplay').innerHTML = Math.round(gathererCost*100)/100 + " food & 1 villager.";
+    document.getElementById('tooltipGatherer').innerHTML = "Dedicated to gathering building materials. Each gatherer costs: " + Math.round(gathererCost*100)/100 + " food and 1 villager. You have: " + gatherer + " Gatherers.";
+    document.getElementById('gathererDisplay').style.textShadow = "1px 1px 1px black";
+    if ((food < gathererCost)||(villager == 0)) {
         document.getElementById('gathererDisplay').style.color = "red";
-        document.getElementById('gathererDisplay').style.textShadow = "1px 1px 1px black";
     } else {
         document.getElementById('gathererDisplay').style.color = "lime";
-        document.getElementById('gathererDisplay').style.textShadow = "1px 1px 1px black";
     }
     
     
         //BUILDER//
-    document.getElementById('builderDisplay').innerHTML = Math.round(builderCost*100)/100 + " food.";
+    document.getElementById('builderDisplay').innerHTML = Math.round(builderCost*100)/100 + " food & 1 villager.";
+    document.getElementById('tooltipBuilder').innerHTML = "Specialized in building, gives little resources but each builder lowers the buildings multiplier in " + (1.15 * workerMultiplier) + "%. Each builder costs: " + Math.round(builderCost*100)/100 + " food and 1 villager. You have: " + builder + " Builders. Multiplier is at: " + Math.round(buildingcostMultiplier*100)/100 + " Cannot go below 1.05";
     document.getElementById('builderDisplay').style.textShadow = "1px 1px 1px black";
-    document.getElementById('tooltipBuilder').innerHTML = "Specialized in building, gives little resources but each builder lowers the buildings multiplier in " + (1.15 * workerMultiplier) + "%. Each builder costs: " + Math.round(builderCost*100)/100 + " food. You have: " + builder + " Builders. Multiplier is at: " + Math.round(buildingcostMultiplier*100)/100 + " Cannot go below 1.05";
-    if ((food < builderCost)||(population == populationMax)) {
+    if ((food < builderCost)||(villager == 0)) {
         document.getElementById('builderDisplay').style.color = "red";
     } else {
         document.getElementById('builderDisplay').style.color = "lime";
     }
         
         //ELDER//
-    if ((food < elderCost)||(population == populationMax)||(science < elderCost)) {document.getElementById('elderDisplay').innerHTML = Math.round(elderCost*100)/100 + " food & science.";
-                            document.getElementById('elderDisplay').style.color = "red";
-                            document.getElementById('elderDisplay').style.textShadow = "1px 1px 1px black";                           
+    document.getElementById('tooltipElder').innerHTML = "A wise old person who shares his or her knowledge with others, generating more science. Each elder costs: " + Math.round(elderCost*100)/100 + " food and science and 1 villager. You have: " + elder + " Elders lecturing.";
+    document.getElementById('elderDisplay').innerHTML = Math.round(elderCost*100)/100 + " food & science & 1 villager.";
+    document.getElementById('elderDisplay').style.textShadow = "1px 1px 1px black";
+    if ((food < elderCost)||(villager == 0)||(science < elderCost)) {
+                            document.getElementById('elderDisplay').style.color = "red";                           
                            } else {
-                            document.getElementById('elderDisplay').innerHTML = Math.round(elderCost*100)/100 + " food & science.";
                             document.getElementById('elderDisplay').style.color = "lime";
-                            document.getElementById('elderDisplay').style.textShadow = "1px 1px 1px black"; 
                            }
-    document.getElementById('tooltipElder').innerHTML = "A wise old person who shares his or her knowledge with others, generating more science. Each elder costs: " + Math.round(elderCost*100)/100 + " food and science. You have: " + elder + " Elders lecturing.";
-
     
         //SHAMAN//
-    if ((food < shamanCost)||(population == populationMax)) {
+    document.getElementById('shamanDisplay').style.textShadow = "1px 1px 1px black";
+    document.getElementById('shamanDisplay').innerHTML = Math.round(shamanCost*100)/100 + " food & 1 villager.";
+    document.getElementById('tooltipShaman').innerHTML = "The first type of spiritual leader of your civilization, generates aether. Each shaman costs: " + Math.round(shamanCost*100)/100 + " food and 1 villager. You have: " + shaman + " Shamans."
+    if ((food < shamanCost)||(villager == 0)) {
         document.getElementById('shamanDisplay').style.color = "red";
     } else {
         document.getElementById('shamanDisplay').style.color = "lime";
     }
-    document.getElementById('shamanDisplay').style.textShadow = "1px 1px 1px black";
-    document.getElementById('shamanDisplay').innerHTML = Math.round(shamanCost*100)/100 + " food.";
-    document.getElementById('tooltipShaman').innerHTML = "The first type of spiritual leader of your civilization, generates aether. Each shaman costs: " + Math.round(shamanCost*100)/100 + " food. You have: " + shaman + " Shamans."
     
     //MILITARY UNITS//
     
         //MILITIA//
-    if ((villager < 1)||(material < 5)||(luxury < 5)) {
-                            document.getElementById('militiaDisplay').innerHTML = "1 villager, " + militiaCost + " materials and luxuries";
+    document.getElementById('tooltipMilitia').innerHTML = "The militia is the first type of military unit in game! Each militia costs: 1 villager, " + Math.round(militiaCost*1)/1 + " material and luxury, each granting military strength. You have: " + militia + " Militia on duty.";
+    document.getElementById('militiaDisplay').innerHTML = "1 villager, " + Math.round(militiaCost*10)/10 + " materials & luxuries";
+    document.getElementById('militiaDisplay').style.textShadow = "1px 1px 1px black";
+    if ((villager < 1)||(material < militiaCost)||(luxury < militiaCost)) {
                             document.getElementById('militiaDisplay').style.color = "red";
-                            document.getElementById('militiaDisplay').style.textShadow = "1px 1px 1px black";
                             }  else {
-                            document.getElementById('militiaDisplay').innerHTML = "1 vil, 5 mat and lux";
                             document.getElementById('militiaDisplay').style.color = "lime";
-                            document.getElementById('militiaDisplay').style.textShadow = "1px 1px 1px black";
                                                             }                         
-    document.getElementById('tooltipMilitia').innerHTML = "The militia is the first type of military unit in game! Each militia costs: 1 villager, 5 material and 5 luxury, each granting military strength. You have: " + militia + " Militia on duty.";
     
         //ARCHER//
-    if ((food < archerCost)||(population == populationMax)||(material < archerCost)||(luxury < archerCost)) {
-                            document.getElementById('archerDisplay').innerHTML = Math.round(archerCost*100)/100 + " of all.";
-                            document.getElementById('archerDisplay').style.color = "red";
-                            document.getElementById('archerDisplay').style.textShadow = "1px 1px 1px black";
-                            }  else {
-                            document.getElementById('archerDisplay').innerHTML = Math.round(archerCost*100)/100 + " of all.";
-                            document.getElementById('archerDisplay').style.color = "lime";
-                            document.getElementById('archerDisplay').style.textShadow = "1px 1px 1px black";
-                                                            }                         
     document.getElementById('tooltipArcher').innerHTML = "A trained archer, ready to defend your village! Each archer costs: " + Math.round(archerCost*100)/100 + " food, material and luxury, each granting military strength. You have: " + archer + " Archers on duty.";
-    
+    document.getElementById('archerDisplay').innerHTML = Math.round(archerCost*100)/100 + " of all.";
+    document.getElementById('archerDisplay').style.textShadow = "1px 1px 1px black";
+    if ((food < archerCost)||(population == populationMax)||(material < archerCost)||(luxury < archerCost)) {                
+                            document.getElementById('archerDisplay').style.color = "red";
+                            }  else {
+                            document.getElementById('archerDisplay').style.color = "lime";
+                            }                         
     if (archery == 1) {document.getElementById('archerDiv').style.visibility = "visible"; }
     
     //RESEARCH//
@@ -995,8 +1127,6 @@ function update() {
         document.getElementById('miningDisplay').style.color = "blue";
         document.getElementById('tooltipMining').innerHTML = "The ability to extract resources from the earth. Boosts your workers.";
     }
-    
-    
     if (agriculture == 1) {document.getElementById('miningDiv').style.visibility = "visible";}
     
     //WONDERS//
@@ -1174,4 +1304,5 @@ setInterval(generateResource, 1000);
 setInterval(enemyPillage, 250);
             
             //1/10 Second intervals//
-setInterval(compoundVar, 100);
+setInterval(compoundVar, 0.1);
+setInterval(costsDef, 0.1);
